@@ -1,0 +1,113 @@
+@color-de-fondo: pink;
+@width: 10px;
+
+
+h1{
+  @width: 10px;
+  background-color: @color-de-fondo;
+  width: @width;
+}
+
+div{
+  background-color: @color-de-fondo;
+  width: @width;
+}
+
+.clase{
+  color: @color-de-fondo
+}
+
+@my-selector: banner; //creamos un selector para la defnicion de una clase
+
+.@{my-selector}{ //invocamos al selector, y se va a crear la clase banner
+  margin: 0px;
+  border: 1px solid black;
+}
+
+@property: color; //creamos una propiedad 
+
+.myotraclase{
+  @{property}: pink; //accedemos a esa propiedad y le asignamos un color
+}
+
+//hoisting
+.otraclase{
+  width: @variable;
+}
+@variable: 300px;
+
+//--------- Nesting ------------
+nav{
+  ul{
+    margin: 1px;
+    padding: 10px;
+  }
+  li{
+    display: inline-block
+  }
+}
+
+
+.mediaclase{
+  width: 300px;
+  background-color: green;
+  @media screen and (max-width: 500px){
+    background-color: blue;
+  }
+   @media screen and (max-width: 300px){
+    background-color: yellow;
+  }
+}
+
+
+//------ Mixins ------------
+
+.important-text{
+  color: black;
+  font-size: 30px;
+  font-weight: 20px;
+}
+.important-text-uno{
+  .important-text();
+  background-color: brown;
+}
+
+
+//agregando parametros
+.headtitle(@color; @size){
+  color: @color;
+  size: @size;
+}
+
+.headtitle-uno{
+  .headtitle(red; 30)
+}
+
+.headtitle-dos{
+  .headtitle(@size: 20; @color: yellow)
+}
+
+//----------------
+.border(@color: black; @style: solid){
+  border: @arguments                    //arguments es palabra reservada
+}
+
+.border-style{
+  .border()                    //colocamos las propiedades en una sola linea
+}
+
+//------- Herencia -------------------
+.button-basic{
+  border: none;
+  color: red;
+  background-color: green;
+  cursor: pointer;
+}
+
+.button-danger{                //con herencia se comparte la misma info
+  &:extend(.button-basic);
+  font-size: 30px;
+}
+
+
+

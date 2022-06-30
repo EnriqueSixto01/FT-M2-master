@@ -22,7 +22,7 @@ A partir de una paǵina que simula una noticia sobre _Música 8D_ es necesario t
 
 #### Configuración de LESS (Preprocessador)
 
-* Ejecutar `npm install` para instalar less y less-watch-compiler
+* Ejecutar `npm install` para instalar less y less-watch-compiler en la carpeta responsive-web
 
 * Desde la carpeta del proyecto `responsive-web` ejecutar el siguiente comando: `npm run less`. Esto va a hacer que quede un watcher corriendo de fondo esperando por los cambios que efectuen en el archivo `index.less` para compilarlo a codigo CSS y almacenarlo en el archivo `index.css`.
 

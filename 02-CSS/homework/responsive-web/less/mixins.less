@@ -1,1 +1,32 @@
 // Mixins acá
+.img(@radio){
+    border-radius: @radio;
+}
+
+.flex(@direction, @justify, @align){
+    display: flex;
+    justify-content: @justify;
+    flex-direction: @direction;
+    align-items: @align;
+
+}
+
+.buttonReg(@color, @background, @radio, @size){
+    color: @color;
+    background-color: @background;     
+    border-radius: @radio;
+    font-size: @size;
+    padding: 10px;
+    font-family:'Lucida Sans';
+    box-sizing: border-box;
+    text-align:center;
+    width: fit-content;
+    border: 1px solid black;
+    cursor: pointer;
+    &:hover{                        //hover es como un event, es palabra reservada
+        background-color: @color;
+        color: @background
+
+    }
+}
+

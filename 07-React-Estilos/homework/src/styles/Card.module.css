@@ -1,0 +1,61 @@
+.btn{
+  background-color: gainsboro;
+  color: white;
+  transition-duration: 0.4s;
+  display: block;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 1px solid black;
+  margin-top: 15px;
+  margin-right: 8px;
+  align-self: flex-end;
+  font-size: 15px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.btn:hover{
+  color: white;
+  background-color: red;
+}
+
+.text{
+  font-family:'Trebuchet MS';
+  font-weight: bold;
+  margin: 5px;
+ text-align: center;
+}
+
+.textmargin{
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+}
+
+.img{
+  display: flex;
+  flex-direction: row;
+  width: 70px;
+  height: 70px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card{
+  display: flex;
+  flex-direction:column;
+  background-color: rgb(141, 159, 185);
+  width: 40%;
+  height: 250px; 
+  border: 2px solid black;
+  border-radius: 10px;
+  box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+  cursor: default;
+  transition: all 400ms ease;
+  justify-content: center;
+}
+
+.card:hover{
+  box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+}
+

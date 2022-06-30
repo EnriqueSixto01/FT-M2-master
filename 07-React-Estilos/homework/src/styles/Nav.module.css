@@ -1,0 +1,19 @@
+.nav{
+    background-color: rgb(16, 135, 190);
+    margin: auto;
+    height: 50px;
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.text{
+    font-size: 20px;
+    font-family:fantasy;
+    margin-right: auto;
+}
+
+.logo{
+    margin-left: 15px;
+}

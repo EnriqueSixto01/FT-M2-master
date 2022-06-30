@@ -11,4 +11,4 @@ function App() {
     </>
   )
 }
-render(<App />, document.getElementById('app'));
+render(<App />, document.getElementById('app')); 

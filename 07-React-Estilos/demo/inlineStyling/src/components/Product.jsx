@@ -9,9 +9,10 @@ const pStyle = {
   textAlign: 'center',
 };
 
+//Ahora que nuestros estilos ya estan creados en formato object podemos agregar la variable al atributo style.
 function Product(props) {
   return (
-    <div style={divStyle}>
+    <div style={divStyle}> 
       <h3>{props.title}</h3>
       <p style={pStyle}>{props.price}</p>
     </div>

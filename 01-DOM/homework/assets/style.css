@@ -65,6 +65,7 @@ body {
   cursor: pointer;
   height: 35px;
   background: #0160A2;
+  border-style: groove;
   color: #FFF;
   font-size: 20px;
 }

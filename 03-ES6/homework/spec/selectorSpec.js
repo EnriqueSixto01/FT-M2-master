@@ -25,8 +25,8 @@ describe("matchFunctionMaker", function() {
   it("Debe retornar una funcion que matchie el ID que devuelve TRUE si el elemento matchea el ID", function() {
     var selector = "#price";
     var matcher = matchFunctionMaker(selector);
-    var sampleDivEl = document.createElement("DIV");
-    sampleDivEl.id = "price"; // el elemento tiene tres distintas clases en él
+    var sampleDivEl = document.createElement("DIV"); //se crea un nuevo elemento div
+    sampleDivEl.id = "price"; // el elemento tiene tres distintas clases en él, se le asigna un atributo id con el valor de price
     expect(matcher(sampleDivEl)).toEqual(true);
   });
 

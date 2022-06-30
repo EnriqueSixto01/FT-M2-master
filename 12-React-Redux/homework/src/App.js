@@ -8,6 +8,7 @@ import Movie from "./components/Movie/Movie";
 
 function App() {
   return (
+   
       <React.Fragment>
           <NavBar />
           <Route exact path="/" component={Buscador} />
